@@ -3,6 +3,9 @@
 Several notes:
 
 - The first priority was given to finish it in 4 ~ 6 hours: one day at maximium (Sunday)
+- Started from 11:am, Sunday, 12/08/2024
+- Programming ended at 8:52pm, Sunday, 12/08/2024
+- Monday: polish the documentation only (in one hr) and then commit!!
 - This is a demo-only code to show how to solve a home project for event detection.
 - The target time dedicated to this project is 4~6 hrs, the maximum is 8 hrs.
 - Since we have limited time (4~6 hrs) and have no powerful gpus, except for using free service gpu, like colab, we will have to select a solution as simple as possible in this demo.
