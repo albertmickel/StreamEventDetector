@@ -2,7 +2,7 @@
 
 ## Several comments:
 
-- This demo aims at testing my goal to see how much I can finish in 4 ~ 6 hours: one day at maximium (Sunday)
+- This demo aims at testing my goal to see how much I can finish in 4 ~ 6 hours: one day at maximum (Sunday)
 - Programming started from 11:am, Sunday, 12/08/2024 and ended at 8:52pm, Sunday, 12/08/2024
 - Monday: write up the documentation only (in one hr) and then commit!!
 - So what we have done so far:
@@ -10,16 +10,16 @@
   - trainer.py: the essential component
   - inference.py: a wrapper tool to test inference example
   - client.py: modify it to support feature dumping and online inference 
-  - monadical.ipynb: the notebook file to run on colable to get sample results
+  - monadical.ipynb: the notebook file to run on colab to get sample results
   - monadical.py: the python file for monadical.ipynb
 
-- no time to do:
+- No time to do:
   - need bugging for online inference within client.py
   - manually label data (currently use fixed values to fill up the fields for some samples randomly selected)
-  - fine tune some important paramters to achieve higher performance
+  - fine tune some important parameters to achieve higher performance
   - no time to create a docker and a local env to run train.py locally (the client.py was run locally to generate input.txt and target.txt). We ran train.py on colab to product the results (cf. the results given below)
 
-- The code is not **perfect**, but it should be a working solution, when we manually labelled some data. The expected accuracy could reach 80% or a bit higher if sufficent labelled data were used. However, for advanced performance, we must have more resoruces and time (cf. the comment below on this) 
+- The code is not **perfect**, but it should be a working solution, when we manually labelled some data. The expected accuracy could reach 80% or a bit higher if sufficient labelled data were used. However, for advanced performance, we must have more resources and time (cf. the comment below on this) 
 
 
 ## Below were some of my thoughts I wrote in my working/thinking process (not deleted for just reference)
@@ -29,8 +29,8 @@
 - Since we have limited time (4~6 hrs) and have no powerful gpus, except for using free service gpu, like colab, we will have to select a solution as simple as possible in this demo.
 - The performance of this solution would be OK, or say, medium, which should roughly solve the problem. The expected accuracy would be around 80% or higher, if we manually label a big dataset. In fact, the bigger, the better! (see below the comment for labelling the data)
 - If I had more GPUs, I would go for other more complicated solutions, e.g, using the pretrained model. However, it would surely require multiples GPUs and more stable GPU service (colab is not the stable one!)
-- we need to manually label a dataset for training/dev/testing. This part of work would require a plenty of time. The basic idea is that the more labelled data, the better. However, for demo purpose, a small example set with several labelled samples would be enough! Please more focus on the methodology, but not the accuracy.
-- Due to the limitted 4-6 hrs, the manual work has been skipped. Instead, we randomly chose some samples to label them as event being found and filled the feilds with the fixed values (for simulation only). In reality, we should have people to label the data manually.
+- We need to manually label a dataset for training/dev/testing. This part of work would require a plenty of time. The basic idea is that the more labelled data, the better. However, for demo purpose, a small example set with several labelled samples would be enough! Please more focus on the methodology, but not the accuracy.
+- Due to the limited 4-6 hrs, the manual work has been skipped. Instead, we randomly chose some samples to label them as event being found and filled the feilds with the fixed values (for simulation only). In reality, we should have people to label the data manually.
 
 - The whole structure of the codes is organized by three components whose names are self-explained: 
   -- feature.py: 
