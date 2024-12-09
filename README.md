@@ -10,12 +10,14 @@
   - trainer.py: the essential component
   - inference.py: a wrapper tool to test inference example
   - client.py: modify it to support feature dumping and online inference 
+  - monadical.ipynb: the notebook file to run on colable to get sample results
+  - monadical.py: the python file for monadical.ipynb
 
 - no time to do:
   - need bugging for online inference within client.py
   - manually label data (currently use fixed values to fill up the fields for some samples randomly selected)
   - fine tune some important paramters to achieve higher performance
-  - no time to create a dcoker and a local env to run train.py locally (the client.py was run locally to generate input.txt and target.txt). We ran it on colab to product the results (cf. the results given below)
+  - no time to create a docker and a local env to run train.py locally (the client.py was run locally to generate input.txt and target.txt). We ran train.py on colab to product the results (cf. the results given below)
 
 - The code is not perfect, but it should be a working solution, when we manually labelled some data. The expected accuracy could reach 80% or a bit higher. However, for advanced performance, we must have more resoruces and time (cf. the comment below on this) 
 
@@ -34,6 +36,7 @@
   -- feature.py: 
   -- train.py
   -- inference.py
+  - monadical.ipynb: the notebook file to run on colable to get sample results
 
 
 - training curve:
