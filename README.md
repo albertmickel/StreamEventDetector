@@ -21,41 +21,72 @@ Several notes:
   ``Init model!
   Start training...
   Epoch 1/10, Train Loss: 6.064892117793743, Dev Loss: 1.2988142222166061
+
   Epoch 2/10, Train Loss: 1.3353360891342163, Dev Loss: 0.8007514625787735
+
   Epoch 3/10, Train Loss: 0.8786612336452191, Dev Loss: 0.5996354594826698
+
   Epoch 4/10, Train Loss: 0.602766364812851, Dev Loss: 0.4177117720246315
+
   Epoch 5/10, Train Loss: 0.4098215275085889, Dev Loss: 0.28012335672974586
+
   Epoch 6/10, Train Loss: 0.2847662310187633, Dev Loss: 0.16099568456411362
+
   Epoch 7/10, Train Loss: 0.19452546995419723, Dev Loss: 0.13503759168088436
+
   Epoch 8/10, Train Loss: 0.13819390821915406, Dev Loss: 0.09735275711864233
+
   Epoch 9/10, Train Loss: 0.09944753004954411, Dev Loss: 0.06827877461910248
+
   Epoch 10/10, Train Loss: 0.07387460854191047, Dev Loss: 0.05415740702301264
+
 Done!
   ``
 
 - example inference outputs with respect to iterations:
   Init model!
 ``Start training...
+
 Epoch 1/10, Train Loss: 6.180439215440017, Dev Loss: 1.6596072018146515
+
 Generated XML Summary: < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < > < >
+
 Epoch 2/10, Train Loss: 1.3400157873447125, Dev Loss: 1.1493702232837677
+
 Generated XML Summary: < / > < / > < / > < / > < / > < / > < / > < / > < / > < / > < / > < / > < / > < / > < / > < / > < / > < / > < / > < / > < / > < / > < / > < / > < / > < / > < / > < / > < / > < / > < / > < / > < / > <
+
 Epoch 3/10, Train Loss: 0.8848875440084017, Dev Loss: 0.8143899440765381
+
 Generated XML Summary: < / user > < / user > < / user > < / user > < / user > < / user > < / user > < / user > < / user > < / user > < / user > < / user > < / user > < / user > < / user > < / user > < / user > < / user > < / user > < / user > < / user > < / user > < / user > < / user > < / user >
+
 Epoch 4/10, Train Loss: 0.6546788376111251, Dev Loss: 0.5249920152127743
+
 Generated XML Summary: < / type > < / user > < / user > < / user > < / user > < / user > < user > user3 < / user > < / user > < user > user3 < / user > < / user > < user > user3 < / user > < / user > < user > user3 < / user > < / user > < user > user3 < / user > < / user > < user > user3 < / user > < /
+
 Epoch 5/10, Train Loss: 0.4617459120658728, Dev Loss: 0.4145588092505932
+
 Generated XML Summary: < / type > < / participants > < / user > < user > user3 < / user > < user > user3 < / user > < user > user3 < / user > < user > user3 < / user > < user > user3 < / user > < user > user3 < / user > < user > user3 < / user > < user > user3 < / user > < user > user3 < / user > < user > user3 < /
+
 Epoch 6/10, Train Loss: 0.3212673927728946, Dev Loss: 0.28497982397675514
+
 Generated XML Summary: < / type > < date > tomorrow < / user > < user > user1 < / user > < user > user3 < / user > < user > user3 < / user > < / user > < user > user3 < / user > < user > user3 < / user > < / user > < user > user3 < / user > < user > user3 < / user > < / user > < user > user3 < / user > < user > user
+
 Epoch 7/10, Train Loss: 0.22522267928490272, Dev Loss: 0.21180029399693012
+
 Generated XML Summary: < / type > < time > 10 am < / time > < date > tomorrow < / date > < participants > < user > user1 < / user > < user > user3 < / user > < / participants > < / event >
+
 Epoch 8/10, Train Loss: 0.1645104753283354, Dev Loss: 0.1302384166046977
+
 Generated XML Summary: < / type > < time > 10 am < / time > < date > tomorrow < / date > < participants > < user > user1 < / user > < user > user3 < / user > < / participants > < / event >
+
 Epoch 9/10, Train Loss: 0.12452367750497964, Dev Loss: 0.12512813974171877
+
 Generated XML Summary: < / type > < time > 10 am < / time > < date > tomorrow < / user > < user > user1 < / user > < user > user2 < / user > < user > user3 < / user > < / participants > < / event >
+
 Epoch 10/10, Train Loss: 0.09711187734053685, Dev Loss: 0.0813563046976924
+
 Generated XML Summary: < / type > < time > 10 am < / time > < date > tomorrow < / date > < participants > < user > user1 < / user > < user > user2 < / user > < user > user3 < / user > < / participants > < / event >
+
 Done!
 ``
 
