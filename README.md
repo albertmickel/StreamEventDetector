@@ -1,6 +1,6 @@
 # StreamEventDetector
 
-##Several comments:
+## Several comments:
 
 - This demo aims at testing my goal to see how much I can finish in 4 ~ 6 hours: one day at maximium (Sunday)
 - Programming started from 11:am, Sunday, 12/08/2024 and ended at 8:52pm, Sunday, 12/08/2024
