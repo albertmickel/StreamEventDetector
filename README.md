@@ -1,12 +1,28 @@
 # StreamEventDetector
 
-Several notes:
+##Several comments:
 
-- The first priority was given to finish it in 4 ~ 6 hours: one day at maximium (Sunday)
-- Started from 11:am, Sunday, 12/08/2024
-- Programming ended at 8:52pm, Sunday, 12/08/2024
-- Monday: polish the documentation only (in one hr) and then commit!!
-- This is a demo-only code to show how to solve a home project for event detection.
+- This demo aims at testing my goal to see how much I can finish in 4 ~ 6 hours: one day at maximium (Sunday)
+- Programming started from 11:am, Sunday, 12/08/2024 and ended at 8:52pm, Sunday, 12/08/2024
+- Monday: write up the documentation only (in one hr) and then commit!!
+- So what we have done so far:
+  - feature.py: for feature generation and do online prediction 
+  - trainer.py: the essential component
+  - inference.py: a wrapper tool to test inference example
+  - client.py: modify it to support feature dumping and online inference 
+
+- no time to do:
+  - need bugging for online inference within client.py
+  - manually label data (currently use fixed values to fill up the fields for some samples randomly selected)
+  - fine tune some important paramters to achieve higher performance
+  - no time to create a dcoker and a local env to run train.py locally (the client.py was run locally to generate input.txt and target.txt). We ran it on colab to product the results (cf. the results given below)
+
+- The code is not perfect, but it should be a working solution, when we manually labelled some data. The expected accuracy could reach 80% or a bit higher. However, for advanced performance, we must have more resoruces and time (cf. the comment below on this) 
+
+
+## below were some of my thought I wrote in my working/thinking process (not deleted for just reference)
+
+- This demo show a simple solution for event detection based on a given stream.
 - The target time dedicated to this project is 4~6 hrs, the maximum is 8 hrs.
 - Since we have limited time (4~6 hrs) and have no powerful gpus, except for using free service gpu, like colab, we will have to select a solution as simple as possible in this demo.
 - The performance of this solution would be OK, or say, medium, which should roughly solve the problem. The expected accuracy would be around 80% or higher, if we manually label a big dataset. In fact, the bigger, the better! (see below the comment for labelling the data)
@@ -21,7 +37,7 @@ Several notes:
 
 
 - training curve:
-  ``Init model!
+  ```Init model!
   Start training...
   Epoch 1/10, Train Loss: 6.064892117793743, Dev Loss: 1.2988142222166061
 
@@ -44,11 +60,11 @@ Several notes:
   Epoch 10/10, Train Loss: 0.07387460854191047, Dev Loss: 0.05415740702301264
 
 Done!
-  ``
+  ```
 
 - example inference outputs with respect to iterations:
   Init model!
-``Start training...
+```Start training...
 
 Epoch 1/10, Train Loss: 6.180439215440017, Dev Loss: 1.6596072018146515
 
@@ -91,7 +107,7 @@ Epoch 10/10, Train Loss: 0.09711187734053685, Dev Loss: 0.0813563046976924
 Generated XML Summary: < / type > < time > 10 am < / time > < date > tomorrow < / date > < participants > < user > user1 < / user > < user > user2 < / user > < user > user3 < / user > < / participants > < / event >
 
 Done!
-``
+```
 
 
 
