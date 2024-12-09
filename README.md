@@ -19,10 +19,10 @@
   - fine tune some important paramters to achieve higher performance
   - no time to create a docker and a local env to run train.py locally (the client.py was run locally to generate input.txt and target.txt). We ran train.py on colab to product the results (cf. the results given below)
 
-- The code is not perfect, but it should be a working solution, when we manually labelled some data. The expected accuracy could reach 80% or a bit higher. However, for advanced performance, we must have more resoruces and time (cf. the comment below on this) 
+- The code is not **perfect**, but it should be a working solution, when we manually labelled some data. The expected accuracy could reach 80% or a bit higher if sufficent labelled data were used. However, for advanced performance, we must have more resoruces and time (cf. the comment below on this) 
 
 
-## below were some of my thought I wrote in my working/thinking process (not deleted for just reference)
+## Below were some of my thoughts I wrote in my working/thinking process (not deleted for just reference)
 
 - This demo show a simple solution for event detection based on a given stream.
 - The target time dedicated to this project is 4~6 hrs, the maximum is 8 hrs.
@@ -111,6 +111,6 @@ Generated XML Summary: < / type > < time > 10 am < / time > < date > tomorrow < 
 
 Done!
 ```
-
+Some meaningful outputs can be seen from above, which shows it's a right direction to go.
 
 
