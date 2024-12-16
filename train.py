@@ -127,6 +127,12 @@ class MTrainer(object):
          # Save the model's state dictionary 
          torch.save(self.model.state_dict(), self.model_save_path)
 
+         # test one sample
+         new_message_stream = "User1: We need to discuss the new project plan. Can we meet at 3 PM?"
+         # Generate XML summary
+         xml_summary = self.predict(new_message_stream)
+         print("Generated XML Summary:", xml_summary)
+
     def load_model(self, model_save_path='seq2seq_model.pth'):
         # Initialize the tokenizer
         self.tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
