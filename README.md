@@ -33,9 +33,9 @@
 - Due to the limited 4-6 hrs, the manual work has been skipped. Instead, we randomly chose some samples to label them as event being found and filled the feilds with the fixed values (for simulation only). In reality, we should have people to label the data manually.
 
 - The whole structure of the codes is organized by three components whose names are self-explained: 
-  -- feature.py: 
-  -- train.py
-  -- inference.py
+  - feature.py: 
+  - train.py
+  - inference.py
   - monadical.ipynb: the notebook file to run on colable to get sample results
 
 
